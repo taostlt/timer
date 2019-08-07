@@ -13,7 +13,11 @@ while True:
     for e in pygame.event.get():
         if e.type == pygame.USEREVENT:
             counter += 1
+<<<<<<< HEAD
             text = str(counter).rjust(3) if counter < 30 else 'boom!'
+=======
+            text = str(counter).rjust(3) if counter < 10 else 'boom!'
+>>>>>>> parent of 4d83e53... timer is 20
         if e.type == pygame.QUIT: break
     else:
         screen.fill((255, 255, 255))
