@@ -13,7 +13,7 @@ while True:
     for e in pygame.event.get():
         if e.type == pygame.USEREVENT:
             counter += 1
-           text = str(counter).rjust(3) if counter < 10 else 'boom!'
+           text = str(counter).rjust(3) if counter < 40 else 'boom!'
         if e.type == pygame.QUIT: break
     else:
         screen.fill((255, 255, 255))
